@@ -22,6 +22,10 @@ public class UC01CadastrarLivro {
 	// fail("nao deve falhar");
 	// }
 	// }
+	
+	/**
+	* Objetivo - Verificar o comportamento da aplicação com ISBN em branco.
+	**/
 
 	@Test
 	public void CT02CadastrarLivroComISBN_em_branco() {
@@ -38,6 +42,10 @@ public class UC01CadastrarLivro {
 			assertEquals("ISBN invalido", e.getMessage());
 		}
 	}
+	
+	/**
+	* Objetivo - Verificar o comportamento da aplicação com ISBN nulo.
+	**/
 
 	@Test
 	public void CT03CadastrarLivroComISBN_nulo() {
@@ -54,6 +62,10 @@ public class UC01CadastrarLivro {
 			assertEquals("ISBN invalido", e.getMessage());
 		}
 	}
+	
+	/**
+	* Objetivo - Verificar o comportamento da aplicação com Autor nulo.
+	**/
 
 	@Test
 	public void CT04cadastrarLivroComAutor_Nulo() {
@@ -71,6 +83,10 @@ public class UC01CadastrarLivro {
 		}
 	}
 
+	/**
+	* Objetivo - Verificar o comportamento da aplicação com Autor em branco.
+	**/
+	
 	@Test
 	public void CT05cadastrarLivroComAutor_em_branco() {
 		// cenario
@@ -87,6 +103,10 @@ public class UC01CadastrarLivro {
 		}
 	}
 
+	/**
+	* Objetivo - Verificar o comportamento da aplicação com Titulo em branco.
+	**/
+	
 	@Test
 	public void CT02cadastrarLivroComTitulo_em_branco() {
 		// cenario
@@ -103,6 +123,10 @@ public class UC01CadastrarLivro {
 		}
 	}
 
+	/**
+	* Objetivo - Verificar o comportamento da aplicação com Titulo nulo.
+	**/
+	
 	@Test
 	public void CT03cadastrarLivroComTitulo_nulo() {
 		// cenario
@@ -118,6 +142,10 @@ public class UC01CadastrarLivro {
 			assertEquals("Titulo invalido", e.getMessage());
 		}
 	}
+	
+	/**
+	* Objetivo - Verificar o comportamento da aplicação com Titulo correto.
+	**/
 
 	@Test
 	public void CT03cadastrarLivro_com_Titulo_sucesso() {
@@ -130,6 +158,10 @@ public class UC01CadastrarLivro {
 		assertEquals("Engenharia de Software", livro.getTitulo());
 	}
 
+	/**
+	* Objetivo - Verificar o comportamento da aplicação com ISBN correto.
+	**/
+	
 	@Test
 	public void CT03cadastrarLivro_com_Isbn_sucesso() {
 		// cenario
@@ -141,6 +173,10 @@ public class UC01CadastrarLivro {
 		assertEquals("121212", livro.getIsbn());
 	}
 
+	/**
+	* Objetivo - Verificar o comportamento da aplicação com autor correto.
+	**/
+	
 	@Test
 	public void CT03cadastrarLivro_com_Autor_sucesso() {
 		// cenario
@@ -151,7 +187,12 @@ public class UC01CadastrarLivro {
 
 		assertEquals("Pressman", livro.getAutor());
 	}
+	
 //Refatorando com Data Builder (evitar redundancia)
+	
+	/**
+	* Objetivo - Verificar o comportamento da aplicação com inserção válida
+	**/
 	@Test
 	public void CT01CadastrarLivroComDadosValidos() {
 		try {
@@ -165,6 +206,10 @@ public class UC01CadastrarLivro {
 		}
 	}
 
+	/**
+	* Objetivo - Verificar o comportamento da aplicação com ISBN em branco.
+	**/
+	
 	@Test
 	public void CT02cadastrarLivroComISBN_em_branco() {
 		try {
